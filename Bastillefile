@@ -1,0 +1,7 @@
+LIMIT memoryuse 1G
+PRE mkdir /root/.acme.sh
+PKG nginx acme.sh
+SYSRC nginx_enable=YES
+OVERLAY usr root
+CMD /root/post_install.sh
+SERVICE nginx start
