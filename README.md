@@ -23,3 +23,8 @@ bastille template JAIL ddowse/signal-tls-proxy --arg EMAIL=user@example.com --ar
 ## Extra
 
 Adds also a Cronjob to reissue certificate 
+
+## Preview
+
+
+[![asciicast](https://asciinema.org/a/389683.svg)](https://asciinema.org/a/389683)
