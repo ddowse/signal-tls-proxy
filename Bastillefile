@@ -1,7 +1,16 @@
-LIMIT memoryuse 1G
-PRE mkdir /root/.acme.sh
+ARG EMAIL
+ARG DOMAIN
+
 PKG nginx acme.sh
+
 SYSRC nginx_enable=YES
-OVERLAY usr root
+
+CP usr /
+CP root /
+
+RENDER /root/post_install.sh
+RENDER /usr/local/etc/nginx/nginx.conf
+
 CMD /root/post_install.sh
+
 SERVICE nginx start
