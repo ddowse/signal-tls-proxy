@@ -15,3 +15,6 @@ RENDER /usr/local/etc/nginx/nginx.conf
 CMD /root/post_install.sh
 
 SERVICE nginx start
+
+CMD echo '0       0       *       *       *       root    acme.sh --cron --home "/root/.acme.sh" > /dev/null' >> /etc/crontab
+
