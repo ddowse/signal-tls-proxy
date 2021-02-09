@@ -5,7 +5,7 @@ BastilleBSD template to bootstrap signal-tls-proxy
 ## Bootstrap
 
 ```shell 
-bastille bootstrap https://gitlab.com/ddowse/signal-tls-proxy 
+bastille bootstrap https://github.com/ddowse/signal-tls-proxy 
 ```
 
 ## Usage
